@@ -6,6 +6,7 @@
     <title>Credamo见数</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
 </head>
 <body class="bg-gray-100">
     <!-- iPhone 15 模拟器外壳 -->
@@ -23,6 +24,42 @@
 
         <!-- 主要内容区域 -->
         <div class="flex-1 main-content">
+            <!-- 轮播图 -->
+            <div class="relative w-full h-48 overflow-hidden">
+                <div class="carousel-container flex transition-transform duration-300">
+                    <div class="w-full flex-shrink-0">
+                        <div class="h-48 bg-gradient-to-r from-blue-500 to-blue-600 flex items-center justify-center">
+                            <div class="text-white text-center p-4">
+                                <h3 class="text-xl font-bold mb-2">新品上市</h3>
+                                <p class="text-sm">限时优惠，立即参与</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-full flex-shrink-0">
+                        <div class="h-48 bg-gradient-to-r from-purple-500 to-purple-600 flex items-center justify-center">
+                            <div class="text-white text-center p-4">
+                                <h3 class="text-xl font-bold mb-2">热门问卷</h3>
+                                <p class="text-sm">参与即有机会获得奖励</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-full flex-shrink-0">
+                        <div class="h-48 bg-gradient-to-r from-green-500 to-green-600 flex items-center justify-center">
+                            <div class="text-white text-center p-4">
+                                <h3 class="text-xl font-bold mb-2">专业调研</h3>
+                                <p class="text-sm">为企业提供精准数据支持</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 轮播指示器 -->
+                <div class="absolute bottom-4 left-0 right-0 flex justify-center space-x-2">
+                    <button class="w-2 h-2 rounded-full bg-white/50 carousel-indicator active"></button>
+                    <button class="w-2 h-2 rounded-full bg-white/50 carousel-indicator"></button>
+                    <button class="w-2 h-2 rounded-full bg-white/50 carousel-indicator"></button>
+                </div>
+            </div>
+
             <!-- 数据集市内容 -->
             <div class="p-4">
                 <div class="flex space-x-4 mb-4">
