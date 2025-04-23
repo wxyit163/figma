@@ -1,0 +1,99 @@
+/* iPhone 15 模拟器样式 */
+body {
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+/* 模拟iPhone 15的圆角 */
+.mx-auto {
+    border-radius: 55px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* 顶部刘海屏 */
+.h-14 {
+    border-top-left-radius: 55px;
+    border-top-right-radius: 55px;
+}
+
+/* 底部圆角 */
+.h-8 {
+    border-bottom-left-radius: 55px;
+    border-bottom-right-radius: 55px;
+}
+
+/* 自定义滚动条样式 */
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+/* 按钮点击效果 */
+button:active {
+    transform: scale(0.98);
+    transition: transform 0.1s;
+}
+
+/* 卡片阴影效果 */
+.shadow {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+/* 底部导航栏样式 */
+.bottom-nav {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: white;
+    border-top: 1px solid #e5e7eb;
+    padding: 8px 0;
+    z-index: 50;
+}
+
+.bottom-nav-container {
+    max-width: 390px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.bottom-nav-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: #6b7280;
+    font-size: 0.75rem;
+}
+
+.bottom-nav-item.active {
+    color: #2563eb;
+}
+
+.bottom-nav-icon {
+    width: 24px;
+    height: 24px;
+    margin-bottom: 4px;
+}
+
+/* 为底部导航腾出空间 */
+.main-content {
+    padding-bottom: 60px;
+} 

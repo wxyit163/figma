@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Credamo见数</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-100">
+    <!-- iPhone 15 模拟器外壳 -->
+    <div class="mx-auto max-w-[390px] min-h-screen bg-white relative">
+        <!-- 顶部状态栏 -->
+        <div class="h-14 bg-black text-white flex items-center justify-between px-4">
+            <div class="text-sm">9:41</div>
+            <div class="flex space-x-2">
+                <div class="w-4 h-4 bg-white rounded-full"></div>
+                <div class="w-4 h-4 bg-white rounded-full"></div>
+                <div class="w-4 h-4 bg-white rounded-full"></div>
+                <div class="w-4 h-4 bg-white rounded-full"></div>
+            </div>
+        </div>
+
+        <!-- 主要内容区域 -->
+        <div class="flex-1 main-content">
+            <!-- 数据集市内容 -->
+            <div class="p-4">
+                <div class="flex space-x-4 mb-4">
+                    <button class="px-4 py-2 bg-blue-600 text-white rounded-full">数据集市</button>
+                    <button class="px-4 py-2 bg-gray-200 text-gray-700 rounded-full">专属问卷</button>
+                    <button class="px-4 py-2 bg-gray-200 text-gray-700 rounded-full">第三方问卷</button>
+                </div>
+                
+                <!-- 数据集市列表 -->
+                <div class="space-y-4">
+                    <div class="bg-white p-4 rounded-lg shadow">
+                        <h3 class="font-medium mb-2">消费者行为调查问卷</h3>
+                        <p class="text-gray-600 text-sm mb-2">收集用户购买习惯和偏好数据</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-blue-600">￥50</span>
+                            <button class="px-4 py-1 bg-blue-600 text-white rounded">立即购买</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 底部导航栏 -->
+        <nav class="bottom-nav">
+            <div class="bottom-nav-container">
+                <a href="index.html" class="bottom-nav-item active">
+                    <svg class="bottom-nav-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path>
+                    </svg>
+                    <span>数据集市</span>
+                </a>
+                <a href="project.html" class="bottom-nav-item">
+                    <svg class="bottom-nav-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"></path>
+                    </svg>
+                    <span>项目</span>
+                </a>
+                <a href="friends.html" class="bottom-nav-item">
+                    <svg class="bottom-nav-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
+                    </svg>
+                    <span>好友</span>
+                </a>
+                <a href="profile.html" class="bottom-nav-item">
+                    <svg class="bottom-nav-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path>
+                    </svg>
+                    <span>我的</span>
+                </a>
+            </div>
+        </nav>
+
+        <!-- 底部安全区域 -->
+        <div class="h-8 bg-white"></div>
+    </div>
+</body>
+</html> 
